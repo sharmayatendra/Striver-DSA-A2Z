@@ -17,4 +17,17 @@ function pattern5(n) {
   return num;
 }
 
-console.log(pattern5(8));
+// console.log(pattern5(8));
+
+function newPattern5(n) {
+  let str = "";
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n - i; j++) {
+      str += "* ";
+    }
+    str += "\n";
+  }
+  return str;
+}
+
+console.log(newPattern5(5));
